@@ -11,7 +11,8 @@ import org.apache.spark.sql.SparkSession
   *       共享变量,在工作节点上的任务不能读取累加器的值，只能写入
   *
   * 1.创建
-  * SparkContext.accumulator[T]
+  * SparkContext.accumulator[T]   过期
+  * SparkContext.longAccumulator  等，直接指定类型
   *
   * 2.使用
   *       增加 +=
